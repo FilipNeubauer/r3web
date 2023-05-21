@@ -1,0 +1,91 @@
+.backG {
+    background-image: url("images/bckgroundblack.png");
+    background-repeat: repeat-x;
+    min-height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+
+.logoContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Logo */
+
+
+.logo {
+    width: 80%;
+    position: relative;
+}
+
+@keyframes fadeInSlideLogo {
+    0% {
+        opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    }
+    100% {
+      opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    }
+  }
+  
+.fadeInSlideLogo {
+    opacity: 0;
+    animation: fadeInSlideLogo 1s linear forwards;
+}
+
+
+/* Button */
+
+.buttonDown {
+    position: absolute;
+    /* height: 10%; */
+
+}
+
+
+@keyframes fadeInSlideButton {
+0% {
+    opacity: 0;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+100% {
+    opacity: 1;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+}
+
+.fadeInSlideButton {
+opacity: 0;
+animation: fadeInSlideButton 1s linear forwards;
+}
+
+
+
+/* button hover */
+
+.svg-image {
+    transition:  filter 0.3s;
+    /* transform 0.3s, */
+  }
+  
+  .svg-image:hover {
+    /* transform: scale(2); */
+    filter: brightness(200%);
+  }
