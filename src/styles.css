@@ -1,7 +1,7 @@
 .backG {
     background-image: url("images/bckgroundblack.png");
-    background-repeat: repeat-y;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
+    /* background-repeat: repeat-x; */
 
     /* min-width: 100%; */
 }
