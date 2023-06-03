@@ -1,12 +1,11 @@
 html, body {
     background-image: url("images/bckgroundblack.png");
     background-repeat: repeat;
-    height: 200vh;
+    /* height: 200vh; */
     background-color: black ;
 
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
 }
 
 
@@ -50,7 +49,7 @@ html, body {
     width: 80%;
     position: absolute;
     animation: fadeInIntro 1s linear forwards;
-    top: 45%;
+    top: 45vh;
     left: 50%;
 }
 
@@ -60,7 +59,7 @@ html, body {
     position: absolute;
     animation: fadeInIntro 1s linear forwards;
     width: 60%;
-    top: 70%;
+    top: 70vh;
     left: 50%;
 }
 
@@ -71,7 +70,7 @@ html, body {
     height: 10%;
     width: 10%;
 
-    top: 85%;
+    top: 85vh;
     left: 50%;
 
     animation: fadeInIntro 1s linear forwards;
@@ -88,3 +87,72 @@ html, body {
 }
 
 
+/* firstPage */
+.firstPage {
+
+}
+
+
+.wholeBar {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+
+.miniLogo {
+    width: 10%;
+    padding-left: 40px;
+}
+
+
+.navBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.navList {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* temporary */
+a {
+    font-family: nasalization;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+
+@font-face {
+    font-family: nasalization;
+    src: url(fonts/nasalization-rg.otf)
+}
+
+
+hr {
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
