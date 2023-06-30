@@ -5,8 +5,10 @@ import but from "../images/buttondown1.svg"
 import ready from "../images/ready1.png"
 import logo from "../images/r3master.png"
 import digital from "../images/digitalsolutions.png"
-import miniLogo from "../images/r3.png"
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import miniLogo from "../images/r3.png"
+
 
 
 const MainPage = () => {
@@ -53,56 +55,58 @@ const MainPage = () => {
 
 
     return (<div className={`backG ${shifted ? "shifted" : ""}`}>
-      <div  className='introPage'>
-        <img  src={logo} className='logo' alt='Remaster'/>
-        <img src={ready} className='ready' alt='ready for tomorrow?'/>
-        <input type="image" onClick={shiftFoo} src={but} className='buttonDown svg-image' alt='button down'/>
+    <div  className='introPage'>
+      <img  src={logo} className='logo' alt='Remaster'/>
+      <img src={ready} className='ready' alt='ready for tomorrow?'/>
+      <input type="image" onClick={shiftFoo} src={but} className='buttonDown svg-image' alt='button down'/>
 
+    </div>
+
+    <div  className='firstPage'>
+      <div className='wholeBar'>
+        <Link>
+        <input type="image" src={miniLogo} onClick={shiftFoo} className='miniLogo'/>
+        </Link>
+        <nav className='navBar'>
+          <ul className='navList'>
+            <li>
+              <Link to='/About'>About Us</Link>
+            </li>
+            <li>
+              <a href='#'>Configurator</a>
+            </li>
+            <li>
+              <a href='#'>Contact</a>
+            </li>
+            <li>
+              <a href='#'>Services</a>
+            </li>
+            <li>
+              <a href='#'>Pricing</a>
+            </li>
+            <li>
+              <a href='#'>Projects</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div  className='firstPage'>
-        <div className='wholeBar'>
-          <input type="image" src={miniLogo} onClick={shiftFoo} className='miniLogo'/>
-          <nav className='navBar'>
-            <ul className='navList'>
-              <li>
-                <Link to='/About'>About Us</Link>
-              </li>
-              <li>
-                <a href='#'>Configurator</a>
-              </li>
-              <li>
-                <a href='#'>Contact</a>
-              </li>
-              <li>
-                <a href='#'>Services</a>
-              </li>
-              <li>
-                <a href='#'>Pricing</a>
-              </li>
-              <li>
-                <a href='#'>Projects</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <hr ref={targetElementRef}/>
+      <hr ref={targetElementRef}/>
 
 
 
-        <div className='contentFirstPage'>
+      <div className='contentFirstPage'>
 
-        <img  src={digital} className='digital' alt='Digital Solutions for You'/>
+      <img  src={digital} className='digital' alt='Digital Solutions for You'/>
 
-          <button className='startBtn'>
-            <label className='startYourJourney'>
-            Start Your Journey
-            </label>
-          </button>
+        <button className='startBtn'>
+          <label className='startYourJourney'>
+          Start Your Journey
+          </label>
+        </button>
 
-        </div>
       </div>
+    </div>
 
 
 </div> 
