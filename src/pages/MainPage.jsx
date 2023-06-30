@@ -6,7 +6,6 @@ import ready from "../images/ready1.png"
 import logo from "../images/r3master.png"
 import digital from "../images/digitalsolutions.png"
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
 import miniLogo from "../images/r3.png"
 
 
@@ -73,19 +72,19 @@ const MainPage = () => {
               <Link to='/About'>About Us</Link>
             </li>
             <li>
-              <a href='#'>Configurator</a>
+              <Link to='/Configurator'>Configurator</Link>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <Link to='/Contact'>Contact</Link>
             </li>
             <li>
-              <a href='#'>Services</a>
+              <Link to='/Services'>Services</Link>
             </li>
             <li>
-              <a href='#'>Pricing</a>
+              <Link to='/Pricing'>Pricing</Link>
             </li>
             <li>
-              <a href='#'>Projects</a>
+              <Link to='/Projects'>Projects</Link>
             </li>
           </ul>
         </nav>

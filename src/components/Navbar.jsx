@@ -10,28 +10,28 @@ function Navbar() {
     <Link to='/'>
       <input className="miniLogo" type="image" src={miniLogo}/>
       </Link>
-          <nav className='navBar'>
-            <ul className='navList'>
-              <li>
-                <Link to='/About'>About Us</Link>
-              </li>
-              <li>
-                <a href='#'>Configurator</a>
-              </li>
-              <li>
-                <a href='#'>Contact</a>
-              </li>
-              <li>
-                <a href='#'>Services</a>
-              </li>
-              <li>
-                <a href='#'>Pricing</a>
-              </li>
-              <li>
-                <a href='#'>Projects</a>
-              </li>
-            </ul>
-          </nav>
+      <nav className='navBar'>
+          <ul className='navList'>
+            <li>
+              <Link to='/About'>About Us</Link>
+            </li>
+            <li>
+              <Link to='/Configurator'>Configurator</Link>
+            </li>
+            <li>
+              <Link to='/Contact'>Contact</Link>
+            </li>
+            <li>
+              <Link to='/Services'>Services</Link>
+            </li>
+            <li>
+              <Link to='/Pricing'>Pricing</Link>
+            </li>
+            <li>
+              <Link to='/Projects'>Projects</Link>
+            </li>
+          </ul>
+        </nav>
     </div>
 
     <hr/>
