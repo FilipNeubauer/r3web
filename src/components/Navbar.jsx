@@ -32,6 +32,13 @@ function Navbar() {
             </li>
           </ul>
         </nav>
+
+        <button className="hamburger-menu">
+          <span ></span>
+          <span ></span>
+          <span ></span>
+        </button>
+
     </div>
 
     <hr/>
