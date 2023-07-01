@@ -71,9 +71,9 @@ const MainPage = () => {
             <li>
               <Link to='/About'>About Us</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to='/Configurator'>Configurator</Link>
-            </li>
+            </li> */}
             <li>
               <Link to='/Contact'>Contact</Link>
             </li>
@@ -83,9 +83,9 @@ const MainPage = () => {
             <li>
               <Link to='/Pricing'>Pricing</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to='/Projects'>Projects</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
