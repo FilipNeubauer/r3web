@@ -15,21 +15,21 @@ function Navbar() {
             <li>
               <Link to='/About'>About Us</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to='/Configurator'>Configurator</Link>
-            </li>
+            </li> */}
             <li>
               <Link to='/Contact'>Contact</Link>
             </li>
             <li>
               <Link to='/Services'>Services</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to='/Pricing'>Pricing</Link>
             </li>
             <li>
               <Link to='/Projects'>Projects</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
     </div>

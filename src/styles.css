@@ -8,6 +8,15 @@ html, body {
     padding: 0;
 }
 
+h1 {
+    font-family: nasalization;
+    color: #09ABFD;
+}
+
+p {
+    font-family: nasalization;
+    color: #ffffff;
+}
 
 .backG {
     background-image: url("images/bckgroundblack.png");
@@ -86,13 +95,6 @@ html, body {
     filter: brightness(200%);
 }
 
-
-/* firstPage */
-.firstPage {
-
-}
-
-
 .wholeBar {
     display: flex;
     flex-direction: row;
@@ -169,6 +171,18 @@ hr {
     align-items: center;
     height: 80vh;
     margin-right: 180px;
+}
+
+.contentServices {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+}
+
+.columnServices {
+    
 }
 
 .startBtn {
