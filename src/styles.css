@@ -122,9 +122,8 @@ p {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -181,9 +180,7 @@ hr {
     justify-content: center;
 }
 
-.columnServices {
-    
-}
+
 
 .startBtn {
     background-color: #09ABFD;
@@ -210,38 +207,3 @@ hr {
     height: 55%;
  }
   
-/* hamburger menu */
-
-.hamburger-menu {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    justify-self: end;
-}
-
-.hamburger-menu span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-}
-
-@media screen and (max-width: 768px) {
-    .navBar {
-      display: none;
-    }
-  
-    .hamburger-menu {
-      display: block;
-    }
-
-    .wholeBar {
-        justify-content: space-between;
-    }
-  
-    /* .open .line {
-      background-color: #fff;
-    } */
-  }
