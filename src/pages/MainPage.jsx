@@ -63,9 +63,6 @@ const MainPage = () => {
 
     <div  className='firstPage'>
       <div className='wholeBar'>
-        <Link>
-        <input type="image" src={miniLogo} onClick={shiftFoo} className='miniLogo'/>
-        </Link>
         <nav className='navBar'>
           <ul className='navList'>
             <li>
@@ -77,12 +74,18 @@ const MainPage = () => {
             <li>
               <Link to='/Contact'>Contact</Link>
             </li>
-            <li>
-              <Link to='/Services'>Services</Link>
-            </li>
+
+            <Link>
+              <input type="image" src={miniLogo} onClick={shiftFoo} className='miniLogo'/>
+            </Link>
+            
             <li>
               <Link to='/Pricing'>Pricing</Link>
             </li>
+            <li>
+              <Link to='/Services'>Services</Link>
+            </li>
+           
             {/* <li>
               <Link to='/Projects'>Projects</Link>
             </li> */}

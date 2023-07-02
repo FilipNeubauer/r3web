@@ -7,9 +7,6 @@ function Navbar() {
   return (
     <>
     <div className='wholeBar'>
-    <Link to='/'>
-      <input className="miniLogo" type="image" src={miniLogo}/>
-      </Link>
       <nav className='navBar'>
           <ul className='navList'>
             <li>
@@ -21,13 +18,20 @@ function Navbar() {
             <li>
               <Link to='/Contact'>Contact</Link>
             </li>
+
+            <Link to='/'>
+              <input className="miniLogo" type="image" src={miniLogo}/>
+            </Link>
+
+            <li>
+              <Link to='/Pricing'>Pricing</Link>
+            </li>
+
             <li>
               <Link to='/Services'>Services</Link>
             </li>
+            
             {/* <li>
-              <Link to='/Pricing'>Pricing</Link>
-            </li>
-            <li>
               <Link to='/Projects'>Projects</Link>
             </li> */}
           </ul>

@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles.css"
 import Navbar from '../components/Navbar';
+import servimg from "../images/services.png"
 
 const Services = () => {
     
@@ -9,6 +10,7 @@ const Services = () => {
         <Navbar/>
         <div className='contentServices'>
             <h1>OUR SERVICES</h1>
+            <div className='pservices'>
             <p> We offer a comprehensive 
             range of software engineering, design 
             and data abalytic services 
@@ -19,6 +21,8 @@ const Services = () => {
             solutions tailored to meet the 
             unique needs of our clients.
             </p>
+            </div>
+            <img  src={servimg} className='servicesimg' alt='Services'/>
         </div>
 
         </div>
