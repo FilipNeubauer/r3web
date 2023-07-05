@@ -53,7 +53,9 @@ const MainPage = () => {
     }
 
 
-    return (<div className={`backG ${shifted ? "shifted" : ""}`}>
+    return (
+    <>
+    <div className={`backG ${shifted ? "shifted" : ""}`}>
     <div  className='introPage'>
       <img  src={logo} className='logo' alt='Remaster'/>
       <img src={ready} className='ready' alt='ready for tomorrow?'/>
@@ -112,6 +114,7 @@ const MainPage = () => {
 
 
 </div> 
+</>
 )
 }
 

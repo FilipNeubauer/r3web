@@ -11,6 +11,12 @@ html, body {
 h1 {
     font-family: nasalization;
     color: #09ABFD;
+    font-size: 50px;
+}
+h2 {
+    font-family: nasalization;
+    color: #09ABFD;
+    font-size: 30px;
 }
 
 p {
@@ -130,8 +136,6 @@ p {
     padding: 0;
 }
 
-
-
 /* temporary */
 a {
     font-family: nasalization;
@@ -141,6 +145,11 @@ a {
 }
 
 a:hover {
+    /* text-decoration: underline; */
+    color: #09ABFD;
+}
+
+a:active {
     /* text-decoration: underline; */
     color: #09ABFD;
 }
@@ -177,7 +186,29 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+}
+
+.contentAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.whatWeDo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
 }
 
 .pservices {
@@ -216,5 +247,24 @@ hr {
  .servicesimg {
     margin-top: 200px;
     width: 80%;
+ }
+
+ .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+ }
+
+ .card {
+    width: 200px;
+    padding: 20px;
+ }
+
+ .member {
+    width: 500px;
+    padding: 20px;
  }
   

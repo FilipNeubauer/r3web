@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom';
 import "../styles.css"
 import miniLogo from "../images/r3.png"
 
+
 function Navbar() {
   return (
     <>
     <div className='wholeBar'>
       <nav className='navBar'>
           <ul className='navList'>
+
             <li>
-              <Link to='/About'>About Us</Link>
+              <Link to='/About'>About Us</Link>      
             </li>
             {/* <li>
               <Link to='/Configurator'>Configurator</Link>
@@ -36,12 +38,6 @@ function Navbar() {
             </li> */}
           </ul>
         </nav>
-
-        <button className="hamburger-menu">
-          <span ></span>
-          <span ></span>
-          <span ></span>
-        </button>
 
     </div>
 
