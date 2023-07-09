@@ -5,9 +5,8 @@ import but from "../images/buttondown1.svg"
 import ready from "../images/ready1.png"
 import logo from "../images/r3master.png"
 import digital from "../images/digitalsolutions.png"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import miniLogo from "../images/r3.png"
-
 
 
 const MainPage = () => {
@@ -52,6 +51,11 @@ const MainPage = () => {
         setShifted(!shifted)
     }
 
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+      navigate('/Contact');
+    };
 
     return (
     <>
@@ -103,7 +107,7 @@ const MainPage = () => {
 
       <img  src={digital} className='digital' alt='Digital Solutions for You'/>
 
-        <button className='startBtn'>
+        <button onClick={handleClick} className='startBtn'>
           <label className='startYourJourney'>
           Start Your Journey
           </label>

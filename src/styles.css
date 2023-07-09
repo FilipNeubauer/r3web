@@ -137,19 +137,19 @@ p {
 }
 
 /* temporary */
-a {
+li a {
     font-family: nasalization;
     color: white;
     font-size: 30px;
     text-decoration: none;
 }
 
-a:hover {
+li a:hover {
     /* text-decoration: underline; */
     color: #09ABFD;
 }
 
-a:active {
+li a:active {
     /* text-decoration: underline; */
     color: #09ABFD;
 }
@@ -199,6 +199,7 @@ hr {
 
 .contentContact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -272,14 +273,54 @@ hr {
     padding: 20px;
  }
 
+ .hCon{
+    margin-bottom: 0px;
+ }
+
+ .pCon {
+    font-size: 30px;
+ }
+
  .member {
     width: 500px;
     padding: 20px;
  }
 
  .member1 {
-    width: 200px;
+    width: 300px;
     padding: 20px;
+ }
+
+ .teamCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+ }
+
+ .imgTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ .team{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .reh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+ }
+
+ .neub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
  }
 
  .contact {
@@ -288,7 +329,34 @@ hr {
     justify-content: center;
  }
 
-  
+ .cntct {
+    font-family: nasalization;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+ }
+
+ .cntct:hover {
+    color: #09abfd;
+ }
+
+ .pPrices {
+    font-size: 40px;
+ }
+
+ .pricingBtn {
+    background-color: #09ABFD;
+    height: 30%;
+    width: 20%;
+    border-radius: 30px;
+    border: none;
+ }
+
+ .pricingBtn:hover {
+    background-color: #0b7bb3; /* Change to the desired color when pressed */
+    cursor: pointer
+}
+
 
 
 

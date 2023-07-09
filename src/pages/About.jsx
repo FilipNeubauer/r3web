@@ -4,6 +4,7 @@ import "../styles.css"
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import colb from "../images/cards/collab.png"
 import crea from "../images/cards/creativity.png"
 import cus from "../images/cards/customer.png"
@@ -108,11 +109,14 @@ const About = () => {
                 <hr/>
                 <div className='team'>
                     <h2>Our Team</h2>
+                    <div className='imgTeam'>
                     <img src={reh} className='member'/>
                     <img src={neub} className='member'/>
+                    </div>
             </div>
             </div>
             </div>
+            {/* <Footer/> */}
             </>
 )
 }
