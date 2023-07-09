@@ -2,17 +2,35 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles.css"
 import miniLogo from "../images/r3.png"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function Navbar() {
 
-  // if on mobile
-  const [hamburger, setHamburger] = useState(true)
 
   // open or not
   const [open, setOpen] = useState(false)
 
+      // auto close menu
+      useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth >= 768) {
+            setOpen(false);
+          } 
+        };
+    
+        // Add event listener for resize
+        window.addEventListener('resize', handleResize);
+    
+        // Initial check on component mount
+        handleResize();
+    
+        // Clean up the event listener on component unmount
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+      
 
 
 
@@ -50,9 +68,13 @@ function Navbar() {
           </ul>
 
 
+          <Link to='/' className={`logoHamburger ${open ? 'open' : ''}`}>
+              <input className="miniLogoHamburger" type="image" src={miniLogo}/>
+          </Link>
+
 
           {/* hamburger navbar */}
-          <ul className='hamburgerNavList'>
+          <ul className={`hamburgerNavList ${open ? "open" : ""}`}>
             <li>
                 <Link to='/About'>About Us</Link>      
               </li>
@@ -60,10 +82,6 @@ function Navbar() {
               <li>
                 <Link to='/Contact'>Contact</Link>
               </li>
-
-              <Link to='/'>
-                <input className="miniLogo" type="image" src={miniLogo}/>
-              </Link>
 
               <li>
                 <Link to='/Pricing'>Pricing</Link>
@@ -79,8 +97,6 @@ function Navbar() {
                 <div className='line'></div>
                 <div className='line'></div>
             </div> 
-
-
 
         </nav>
 

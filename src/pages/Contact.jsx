@@ -5,6 +5,9 @@ import neub from "../images/neubContact.png"
 import reh from "../images/rehakContact.png"
 
 const Contact = () => {
+
+
+      
     
     return (
         <>

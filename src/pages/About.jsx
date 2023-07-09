@@ -17,6 +17,7 @@ import reh from "../images/rehakj.png"
 
 
 const About = () => {
+
    
     // const settings = {
     //     dots: true,
