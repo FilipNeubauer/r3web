@@ -24,6 +24,7 @@ h2 {
 p {
     font-family: nasalization;
     color: #ffffff;
+    line-height: 25px;
 }
 
 .backG {
@@ -289,6 +290,7 @@ hr {
 
  .pCon {
     font-size: 30px;
+    line-height: 35px;
  }
 
  .cont {
@@ -363,6 +365,7 @@ hr {
 
  .pPrices {
     font-size: 40px;
+    line-height: 50px;
  }
 
  .pricingBtn {
