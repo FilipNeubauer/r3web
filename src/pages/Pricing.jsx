@@ -3,6 +3,9 @@ import "../styles.css"
 import Navbar from '../components/Navbar';
 
 const Pricing = () => {
+
+
+
     
     return (
         <>

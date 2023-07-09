@@ -11,6 +11,9 @@ import miniLogo from "../images/r3.png"
 
 
 const MainPage = () => {
+  // open or not
+  const [open, setOpen] = useState(false)
+
     const [shifted, setShifted] = useState(false);
     const targetElementRef = useRef(null);
 
@@ -53,6 +56,27 @@ const MainPage = () => {
     }
 
 
+    // auto close menu
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth >= 768) {
+          setOpen(false);
+        } 
+      };
+  
+      // Add event listener for resize
+      window.addEventListener('resize', handleResize);
+  
+      // Initial check on component mount
+      handleResize();
+  
+      // Clean up the event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+
     return (
     <>
     <div className={`backG ${shifted ? "shifted" : ""}`}>
@@ -92,6 +116,40 @@ const MainPage = () => {
               <Link to='/Projects'>Projects</Link>
             </li> */}
           </ul>
+
+
+{shifted &&          
+          <Link to='/' className={`logoHamburger ${open? 'open' : ''}`}>
+              <input className="miniLogoHamburger" type="image" src={miniLogo}/>
+          </Link>}
+
+
+          {/* hamburger navbar */}
+          <ul className={`hamburgerNavList ${open ? "open" : ""}`}>
+            <li>
+                <Link to='/About'>About Us</Link>      
+              </li>
+
+              <li>
+                <Link to='/Contact'>Contact</Link>
+              </li>
+
+              <li>
+                <Link to='/Pricing'>Pricing</Link>
+              </li>
+
+              <li>
+                <Link to='/Services'>Services</Link>
+              </li>
+          </ul>
+ 
+{shifted&& <div className={`hamburgerContainer ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
+            </div> }
+
+
         </nav>
       </div>
 
