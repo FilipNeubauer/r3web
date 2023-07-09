@@ -3,6 +3,7 @@ import "../styles.css"
 import Navbar from '../components/Navbar';
 import neub from "../images/neubContact.png"
 import reh from "../images/rehakContact.png"
+import Footer from '../components/Footer';
 
 const Contact = () => {
 
@@ -11,7 +12,7 @@ const Contact = () => {
     
     return (
         <>
-        <Navbar/>
+        <Navbar current={"contact"}/>
         <div className='contentContact'>
         <div className='cont'>
             <h2 className='hCon'>Contact Us</h2>
@@ -36,6 +37,8 @@ const Contact = () => {
             </div>
             </div>
         </div>
+
+        <Footer />
         </>
 )
 }

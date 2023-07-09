@@ -49,7 +49,7 @@ const About = () => {
 
     return (
         <>
-        <Navbar/>
+        <Navbar current={"about"}/>
         <div className='contentAbout'>
         <div className='vision'>
             <h2>Our Vision</h2>
@@ -117,7 +117,7 @@ const About = () => {
             </div>
             </div>
             </div>
-            {/* <Footer/> */}
+            <Footer/>
             </>
 )
 }

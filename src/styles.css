@@ -6,6 +6,8 @@ html, body {
 
     margin: 0;
     padding: 0;
+
+    min-height: 100vh;
 }
 
 h1 {
@@ -156,6 +158,10 @@ li a:active {
     color: #09ABFD;
 }
 
+.current a {
+    color: #09ABFD;
+}
+
 .startBtn:hover {
     background-color: #0b7bb3; /* Change to the desired color when pressed */
     cursor: pointer
@@ -259,7 +265,7 @@ hr {
  }
 
  .servicesimg {
-    margin-top: 200px;
+    margin-top: 5%;
     width: 80%;
  }
 
@@ -466,6 +472,36 @@ hr {
         flex-direction: row;
         
     }
+}
+
+
+/* footer */
+.footer-bottom p {
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+footer hr {
+    border-color: #727171;
+    border-width: 0.7px;
+}
+
+.bot {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
 }
 
 
