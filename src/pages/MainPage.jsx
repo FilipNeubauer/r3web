@@ -7,6 +7,7 @@ import logo from "../images/r3master.png"
 import digital from "../images/digitalsolutions.png"
 import { Link, useNavigate } from 'react-router-dom';
 import miniLogo from "../images/r3.png"
+import Footer from '../components/Footer';
 
 
 const MainPage = () => {
@@ -124,7 +125,7 @@ const MainPage = () => {
 
 {shifted &&          
           <Link to='/' className={`logoHamburger ${open? 'open' : ''}`}>
-              <input className="miniLogoHamburger" type="image" src={miniLogo}/>
+              <input className="miniLogoHamburger" type="image" src={miniLogo} onClick={shiftFoo}/>
           </Link>}
 
 

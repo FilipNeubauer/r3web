@@ -5,7 +5,7 @@ import miniLogo from "../images/r3.png"
 import { useState, useEffect } from 'react';
 
 
-function Navbar() {
+function Navbar(props) {
 
 
   // open or not
@@ -40,13 +40,13 @@ function Navbar() {
       <nav className='navBar'>
           <ul className='navList'>
 
-            <li>
+            <li className={props.current == "about" ? "current" : ""}>
               <Link to='/About'>About Us</Link>      
             </li>
             {/* <li>
               <Link to='/Configurator'>Configurator</Link>
             </li> */}
-            <li>
+            <li className={props.current == "contact" ? "current" : ""}>
               <Link to='/Contact'>Contact</Link>
             </li>
 
@@ -54,11 +54,11 @@ function Navbar() {
               <input className="miniLogo" type="image" src={miniLogo}/>
             </Link>
 
-            <li>
+            <li className={props.current == "pricing" ? "current" : ""}>
               <Link to='/Pricing'>Pricing</Link>
             </li>
 
-            <li>
+            <li className={props.current == "services" ? "current" : ""}>
               <Link to='/Services'>Services</Link>
             </li>
             
