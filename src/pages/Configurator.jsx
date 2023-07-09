@@ -3,11 +3,11 @@ import "../styles.css"
 import Navbar from '../components/Navbar';
 
 const Configurator = () => {
-
-      
     
     return (
+        <>
         <Navbar/>
+        </>
 )
 }
 

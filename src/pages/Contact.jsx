@@ -13,12 +13,14 @@ const Contact = () => {
         <>
         <Navbar/>
         <div className='contentContact'>
-        <div className='contact'>
+        <div className='cont'>
             <h2 className='hCon'>Contact Us</h2>
+        
         <p className='pCon'> 
             Did we catch your attention? Do not hesitate and contact us
             right now! 
         </p>
+        </div>
         <div className='teamCon'>
             <div className='reh'>
             <img src={reh} className='member1'/>
@@ -33,7 +35,6 @@ const Contact = () => {
 
             </div>
             </div>
-        </div>
         </div>
         </>
 )

@@ -16,9 +16,7 @@ const Pricing = () => {
         <div className='contentContact'>
         <p className='pPrices'>Prices for software development are highly individual, please contact us for the details.</p>
         <button onClick={handleClick} className='pricingBtn'>
-          <label className='startYourJourney'>
             Contact
-            </label>
         </button>
         </div>
         </>

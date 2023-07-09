@@ -166,9 +166,7 @@ const MainPage = () => {
       <img  src={digital} className='digital' alt='Digital Solutions for You'/>
 
         <button onClick={handleClick} className='startBtn'>
-          <label className='startYourJourney'>
           Start Your Journey
-          </label>
         </button>
 
       </div>

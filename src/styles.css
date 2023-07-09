@@ -179,10 +179,11 @@ hr {
 
 .contentFirstPage {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     height: 80vh;
-    margin-right: 180px;
+    gap: 70px;
 }
 
 .contentServices {
@@ -212,7 +213,7 @@ hr {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 70%;
 }
 
 .whatWeDo {
@@ -220,7 +221,7 @@ hr {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 70%;
 }
 
 .pservices {
@@ -233,26 +234,27 @@ hr {
 
 .startBtn {
     background-color: #09ABFD;
-    height: 10%;
-    width: 30%;
+    width: 300px;
     border-radius: 30px;
+    padding: 15px;
     border: none;
+    color: black;
+    font-size: 20px;
+    vertical-align: auto;
+    font-family: nasalization;
 }
 
 
 .startYourJourney {
     display: flex;
-    font-family: nasalization;
-    font-size: 210%;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 0px;
 }
 
  .digital {
-    margin-right: 15%;
-    width: 42%;
+    width: 350px;
     
  }
 
@@ -283,8 +285,12 @@ hr {
     font-size: 30px;
  }
 
+ .cont {
+    width: 70%;
+ }
+
  .member {
-    width: 500px;
+    width: 40%;
     padding: 20px;
  }
 
@@ -296,14 +302,21 @@ hr {
  .teamCon {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-self: center;
+ }
+
+ .teamCon *{
+    margin: auto;
  }
 
  .imgTeam {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
  }
 
  .team{
@@ -348,10 +361,15 @@ hr {
 
  .pricingBtn {
     background-color: #09ABFD;
-    height: 30%;
-    width: 20%;
+    /* height: 60px; */
+    width: 200px;
     border-radius: 30px;
     border: none;
+    color: black;
+    font-size: 40px;
+    padding: 15px;
+    vertical-align: auto;
+    font-family: nasalization;
  }
 
  .pricingBtn:hover {
