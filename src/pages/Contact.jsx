@@ -13,7 +13,7 @@ const Contact = () => {
     return (
         <>
         <Navbar current={"contact"}/>
-        <div className='contentContact'>
+        <div className='contentContact' style={{"margin-bottom":"30px"}}>
         <div className='cont'>
             <h2 className='hCon'>Contact Us</h2>
         

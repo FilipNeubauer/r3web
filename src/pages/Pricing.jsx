@@ -20,7 +20,7 @@ const Pricing = () => {
             Contact
         </button>
         </div>
-        <Footer bot={true}/>
+        <Footer bot={false}/>
         </>
 )
 }

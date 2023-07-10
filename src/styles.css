@@ -364,8 +364,11 @@ hr {
  }
 
  .pPrices {
-    font-size: 40px;
-    line-height: 50px;
+    /* font-size: 40px; */
+    line-height: 40px;
+    font-size: 1.5rem;
+    margin-left: 12%;
+    margin-right: 12%;
  }
 
  .pricingBtn {
@@ -375,8 +378,8 @@ hr {
     border-radius: 30px;
     border: none;
     color: black;
-    font-size: 40px;
-    padding: 15px;
+    font-size: 1.5rem;
+    padding: 10px;
     vertical-align: auto;
     font-family: nasalization;
  }
@@ -475,6 +478,26 @@ hr {
         flex-direction: row;
         
     }
+
+    .buttonDown {
+        height: 15%;
+        width: 15%;
+        top: 75vh;
+    }
+
+    .ready {
+        top: 60vh;
+    }
+
+    .contentContact {
+        margin-bottom: 180px;
+    }
+
+    .contentServices {
+        margin-bottom: 70px;
+    }
+
+
 }
 
 
@@ -506,6 +529,14 @@ footer hr {
     width: 100vw;
     bottom: 0;
 }
+
+/* .servicesContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+} */
+
 
 
 

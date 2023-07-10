@@ -9,13 +9,13 @@ const Services = () => {
 
     
     return (
-        <>
+        <div className='servicesContainer'>
         <Navbar current={"services"}/>
         <div className='contentServices'>
             <img  src={servimg} className='servicesimg' alt='Services'/>
         </div>
         <Footer />
-        </>
+        </div>
 )
 }
 
