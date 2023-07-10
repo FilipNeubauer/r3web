@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/r3web/static/css/main.e0583da4.css",
-    "main.js": "/r3web/static/js/main.98017e07.js",
+    "main.js": "/r3web/static/js/main.d799fb96.js",
     "static/media/rehakj.png": "/r3web/static/media/rehakj.23eb8dd8df6a7493dbf0.png",
     "static/media/neubauerf.png": "/r3web/static/media/neubauerf.56c5c820c6624c39154d.png",
     "static/media/digitalsolutions.png": "/r3web/static/media/digitalsolutions.26633f2d9e92217c72c7.png",
@@ -22,10 +22,10 @@
     "static/media/buttondown1.svg": "/r3web/static/media/buttondown1.ee409d8ecae434f4b506a1a4cbfb6d5b.svg",
     "index.html": "/r3web/index.html",
     "main.e0583da4.css.map": "/r3web/static/css/main.e0583da4.css.map",
-    "main.98017e07.js.map": "/r3web/static/js/main.98017e07.js.map"
+    "main.d799fb96.js.map": "/r3web/static/js/main.d799fb96.js.map"
   },
   "entrypoints": [
     "static/css/main.e0583da4.css",
-    "static/js/main.98017e07.js"
+    "static/js/main.d799fb96.js"
   ]
 }
