@@ -6,7 +6,7 @@ import ready from "../images/ready1.png"
 import logo from "../images/r3master.png"
 import digital from "../images/digitalsolutions.png"
 import { Link, useNavigate } from 'react-router-dom';
-import miniLogo from "../images/r3.png"
+import miniLogo from "../images/WhiteR3.svg"
 import Footer from '../components/Footer';
 
 

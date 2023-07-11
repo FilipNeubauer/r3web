@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles.css"
-import miniLogo from "../images/r3.png"
+import miniLogo from "../images/WhiteR3.svg"
 import { useState, useEffect } from 'react';
 
 
