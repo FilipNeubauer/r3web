@@ -102,7 +102,7 @@ function Navbar(props) {
 
     </div>
 
-    <hr/>
+    <hr className='hrLine'/>
 
     </>
   );

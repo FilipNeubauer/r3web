@@ -3,20 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
   return (
-    <footer className={props.bot ? "bot" : ""}>
-    <hr />
-      <div className="footer-container">
-        {/* <div className="footer-links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/contact">Contact</Link>
-        </div> */}
-      </div>
+    <div className="footer-container">
+    <hr className='footerHR'/>
       <div className="footer-bottom">
         <p>&copy; 2023 R3 Technologies. All rights reserved.</p>
       </div>
-    </footer>
+      </div>
   );
 };
 

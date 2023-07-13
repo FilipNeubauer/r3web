@@ -198,7 +198,7 @@ li a:active {
 }
 
 
-hr {
+.hrLine {
     border: 1.5px solid white;
     border-radius: 5px;
     margin-left: 2.5vw;
@@ -229,6 +229,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .contentAbout {
@@ -344,6 +345,7 @@ hr {
     flex-wrap: wrap;
     justify-content: space-between;
     align-self: center;
+    margin-bottom: 60px;
  }
 
  .teamCon *{
@@ -361,6 +363,7 @@ hr {
  .team{
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
  }
 
  .reh {
@@ -512,26 +515,19 @@ hr {
         top: 60vh;
     }
 
-    .contentContact {
-        margin-bottom: 180px;
-    }
-
-    .contentServices {
-        margin-bottom: 70px;
-    }
-
-
 }
 
 
-.footer-fixed {
+/* footer */
+.footer-container{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-} 
+    background-color: rgb(2,2,2);opacity:0.85;;
 
-/* footer */
+}
+
 .footer-bottom p {
     text-align: center;
 }
@@ -549,15 +545,10 @@ hr {
     color: white;
 }
 
-footer hr {
-    border-color: #727171;
+.footerHR {
+    border: solid #09abfd;
     border-width: 0.7px;
-}
-
-.bot {
-    position: absolute;
-    width: 100vw;
-    bottom: 0;
+    margin-top: 0;
 }
 
 /* .servicesContainer {

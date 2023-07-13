@@ -158,7 +158,7 @@ const MainPage = () => {
         </nav>
       </div>
 
-      <hr ref={targetElementRef}/>
+      <hr className='hrLine' ref={targetElementRef}/>
 
 
 

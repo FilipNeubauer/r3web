@@ -107,7 +107,7 @@ const About = () => {
                 </Slider> */}
                             
                 </div>
-                <hr/>
+                <hr className='hrLine'/>
                 <div className='team'>
                     <h2>Our Team</h2>
                     <div className='imgTeam'>
