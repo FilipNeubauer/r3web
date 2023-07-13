@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f22f4b28.css",
-    "main.js": "/static/js/main.d3897a77.js",
+    "main.css": "/static/css/main.1f31b1f3.css",
+    "main.js": "/static/js/main.a6a71529.js",
     "static/media/rehakj.png": "/static/media/rehakj.23eb8dd8df6a7493dbf0.png",
     "static/media/neubauerf.png": "/static/media/neubauerf.56c5c820c6624c39154d.png",
     "static/media/digitalsolutions.png": "/static/media/digitalsolutions.26633f2d9e92217c72c7.png",
@@ -16,16 +16,17 @@
     "static/media/growth.png": "/static/media/growth.d6790e8bc4ecadd45ec8.png",
     "static/media/customer.png": "/static/media/customer.60a837a44a59424ec8f8.png",
     "static/media/excellence.png": "/static/media/excellence.1a3988eb73c874e3a059.png",
-    "static/media/r3master.png": "/static/media/r3master.9b5a53a479baa46fcf3e.png",
-    "static/media/ready1.png": "/static/media/ready1.ad431b5f7775cfa62d03.png",
+    "static/media/WhiteR3.png": "/static/media/WhiteR3.1a559a8f2dfaf16ec79d.png",
     "static/media/bckgroundblack.png": "/static/media/bckgroundblack.a1fd13ff7730f65802e6.png",
+    "static/media/ready.svg": "/static/media/ready.4d9b97d5b8cfab49cf97e0dd9c796044.svg",
     "static/media/buttondown1.svg": "/static/media/buttondown1.ee409d8ecae434f4b506a1a4cbfb6d5b.svg",
+    "static/media/WhiteR3.svg": "/static/media/WhiteR3.5e9164f3bca8d4024a52f863f7f8fdac.svg",
     "index.html": "/index.html",
-    "main.f22f4b28.css.map": "/static/css/main.f22f4b28.css.map",
-    "main.d3897a77.js.map": "/static/js/main.d3897a77.js.map"
+    "main.1f31b1f3.css.map": "/static/css/main.1f31b1f3.css.map",
+    "main.a6a71529.js.map": "/static/js/main.a6a71529.js.map"
   },
   "entrypoints": [
-    "static/css/main.f22f4b28.css",
-    "static/js/main.d3897a77.js"
+    "static/css/main.1f31b1f3.css",
+    "static/js/main.a6a71529.js"
   ]
 }
