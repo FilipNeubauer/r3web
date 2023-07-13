@@ -2,11 +2,11 @@ import React from 'react';
 import "../styles.css"
 import { useState, useEffect, useRef } from 'react';
 import but from "../images/buttondown1.svg"
-import ready from "../images/ready1.png"
-import logo from "../images/r3master.png"
+import ready from "../images/ready.svg"
+import logo from "../images/WhiteR3.svg"
 import digital from "../images/digitalsolutions.png"
 import { Link, useNavigate } from 'react-router-dom';
-import miniLogo from "../images/WhiteR3.svg"
+import miniLogo from "../images/WhiteR3.png"
 import Footer from '../components/Footer';
 
 

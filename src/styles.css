@@ -64,11 +64,20 @@ p {
 
 /* Logo */
 .logo {
-    width: 80%;
+    width: 40%;
     position: absolute;
     animation: fadeInIntro 1s linear forwards;
-    top: 45vh;
+    top: 40vh;
     left: 50%;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        position: absolute;
+        width: 55%;
+        top: 37vh;
+        animation: fadeInIntro 1s linear forwards;
+    }
 }
 
 
@@ -77,21 +86,36 @@ p {
     position: absolute;
     animation: fadeInIntro 1s linear forwards;
     width: 60%;
-    top: 70vh;
+    top: 75vh;
     left: 50%;
+}
+
+@media (max-width: 768px) {
+    .ready {
+        position: absolute;
+        width: 85%;
+        top: 60vh;
+        animation: fadeInIntro 1s linear forwards;
+    }
 }
 
 
 /* Button */
 .buttonDown {
     position: absolute;
-    height: 5%;
-    width: 5%;
-
-    top: 85vh;
+    width: 60px;
+    top: 90vh;
     left: 50%;
-
     animation: fadeInIntro 1s linear forwards;
+}
+
+@media (max-width: 768px) {
+    .buttonDown {
+        height: 60px;
+        width: 60px;
+        top: 78vh;
+        animation: fadeInIntro 1s linear forwards;
+    }
 }
 
 
@@ -189,8 +213,16 @@ hr {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    height: 80vh;
+    height: 89vh;
     gap: 70px;
+}
+
+@media (max-width: 768px) {
+    .contentFirstPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .contentServices {
@@ -262,7 +294,6 @@ hr {
 
  .digital {
     width: 350px;
-    
  }
 
  .servicesimg {
@@ -447,12 +478,10 @@ hr {
         display: block;
         position: absolute;
         left: 30px;
-
-
     }
 
     .miniLogoHamburger {
-        width: 70px;
+        width: 55px;
     }
 
 
@@ -479,12 +508,6 @@ hr {
         
     }
 
-    .buttonDown {
-        height: 15%;
-        width: 15%;
-        top: 75vh;
-    }
-
     .ready {
         top: 60vh;
     }
@@ -500,6 +523,13 @@ hr {
 
 }
 
+
+.footer-fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+} 
 
 /* footer */
 .footer-bottom p {

@@ -14,7 +14,7 @@ const Footer = (props) => {
         </div> */}
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2023 R3MASTER. All rights reserved.</p>
+        <p>&copy; 2023 R3 Technologies. All rights reserved.</p>
       </div>
     </footer>
   );
