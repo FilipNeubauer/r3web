@@ -517,6 +517,11 @@ li a:active {
 
 }
 
+    .h2Logo {
+        width: 34px;
+        margin-right: 8px;
+    }
+
 
 /* footer */
 .footer-container{

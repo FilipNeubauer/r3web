@@ -1,19 +1,20 @@
 import React from 'react';
-import "../styles.css"
+import "../styles.css";
 // import Slider from 'react-slick';
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import colb from "../images/cards/collab.png"
-import crea from "../images/cards/creativity.png"
-import cus from "../images/cards/customer.png"
-import exc from "../images/cards/excellence.png"
-import grw from "../images/cards/growth.png"
-import inn from "../images/cards/innovation.png"
-import spd from "../images/cards/speed.png"
-import neub from "../images/neubauerf.png"
-import reh from "../images/rehakj.png"
+import colb from "../images/cards/collab.png";
+import crea from "../images/cards/creativity.png";
+import cus from "../images/cards/customer.png";
+import exc from "../images/cards/excellence.png";
+import grw from "../images/cards/growth.png";
+import inn from "../images/cards/innovation.png";
+import spd from "../images/cards/speed.png";
+import neub from "../images/neubauerf.png";
+import reh from "../images/rehakj.png";
+import logo from "../images/WhiteR3.png";
 
 
 const About = () => {
@@ -80,29 +81,32 @@ const About = () => {
             </p>
             </div>
             <div className='coreValues'>
-            <h2>Our Core Values</h2>
+            <h2>
+                <img src={logo} className="h2Logo" alt="R3 technologies"></img>
+                   Values
+                </h2>
                 <div className='cards'>
                 {/* <Slider {...settings}>
                 <div> */}
-                    <img src={colb} className='card'/>
+                    {/* <img src={colb} className='card'/> */}
                 {/* </div>
                 <div> */}
-                    <img src={cus} className='card'/>
+                    {/* <img src={cus} className='card'/> */}
                 {/* </div>
                 <div> */}
                     <img src={crea} className='card'/>
                 {/* </div>
                 <div> */}
-                    {/* <img src={exc} className='card'/> */}
+                    <img src={exc} className='card'/>
                 {/* </div>
                 <div> */}
-                    <img src={grw} className='card'/>
+                    {/* <img src={grw} className='card'/> */}
                 {/* </div>
                 <div> */}
                     <img src={inn} className='card'/>
                 {/* </div>
                 <div> */}
-                    <img src={spd} className='card'/>
+                    {/* <img src={spd} className='card'/> */}
                 {/* </div>
                 </Slider> */}
                             
