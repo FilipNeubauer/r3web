@@ -85,6 +85,7 @@ const About = () => {
                 <img src={logo} className="h2Logo" alt="R3 technologies"></img>
                    Values
                 </h2>
+                </div>
                 <div className='cards'>
                 {/* <Slider {...settings}>
                 <div> */}
@@ -108,18 +109,20 @@ const About = () => {
                 <div> */}
                     {/* <img src={spd} className='card'/> */}
                 {/* </div>
-                </Slider> */}
-                            
+                </Slider> */}     
                 </div>
-                <hr className='hrLine'/>
+                
+                <div className='line-container'>
+                <hr className='hrLine-about'/>  
+                </div>
+
                 <div className='team'>
                     <h2>Our Team</h2>
                     <div className='imgTeam'>
                     <img src={reh} className='member'/>
                     <img src={neub} className='member'/>
                     </div>
-            </div>
-            </div>
+                </div>
             </div>
             <Footer/>
             </>

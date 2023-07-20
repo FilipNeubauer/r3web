@@ -197,6 +197,17 @@ li a:active {
     src: url(fonts/nasalization-rg.otf)
 }
 
+.line-container {
+    width: 100%;
+}
+
+.hrLine-about {
+    border: 1.5px solid white;
+    border-radius: 5px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 40px;
+}
 
 .hrLine {
     border: 1.5px solid white;
@@ -222,6 +233,9 @@ li a:active {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 60px;
+        height: 80vh;
+
     }
 }
 
@@ -333,6 +347,14 @@ li a:active {
     width: 40%;
     padding: 20px;
  }
+
+ @media (min-width: 890px) {
+    .member {
+        width: 355px;
+    }
+}
+
+
 
  .member1 {
     width: 300px;
