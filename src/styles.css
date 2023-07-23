@@ -268,6 +268,12 @@ li a:active {
     align-items: center;
     text-align: center;
     width: 70%;
+    border-radius: 50px;
+    background-color: rgba(47, 47, 47, 0.5); /* RGBA color with 50% opacity */
+    border: 3px solid #09ABFD;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 .whatWeDo {
@@ -276,6 +282,14 @@ li a:active {
     align-items: center;
     text-align: center;
     width: 70%;
+    border-radius: 50px;
+    background-color: rgba(47, 47, 47, 0.5); /* RGBA color with 50% opacity */
+    border: 3px solid #09ABFD;
+    padding: 20px;
+}
+
+.h2about {
+    margin-bottom: 0;
 }
 
 .pservices {
@@ -326,8 +340,16 @@ li a:active {
  }
 
  .card {
-    width: 200px;
+    width: 20%;
+    height: 350px;
+    display: column;
+    background-color: rgba(47, 47, 47, 0.5); /* RGBA color with 50% opacity */
+    border: 3px solid #09ABFD;
+    text-align: center;
+    border-radius: 50px;
     padding: 20px;
+    margin: 20px;
+    align-items: center;
  }
 
  .hCon{
@@ -631,12 +653,12 @@ li a:active {
   .design {
     display: column;
     background-color: rgba(47, 47, 47, 0.5); /* RGBA color with 50% opacity */
+    border: 3px solid #09ABFD;
     text-align: center;
     border-radius: 50px;
     height: 40%;
     width: 500px;
     padding: 20px;
-    border: 3px solid #09ABFD;
     margin: 20px;
     align-items: center;
   }
@@ -650,6 +672,11 @@ li a:active {
         width: 227px;
     }
 }
+
+ .h1services{
+    display: flex;
+    justify-content: center;
+ }
  
 
 
