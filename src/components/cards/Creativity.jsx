@@ -2,7 +2,7 @@ import React from 'react';
 
 const Creativity = (props) => {
   return (
-    <div className="card">
+    <div className="sidecard">
       <h2>Creativity</h2>
       <p>
       We encourage out-of-the-box thinking, 
