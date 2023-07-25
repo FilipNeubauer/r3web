@@ -21,6 +21,7 @@ const Contact = () => {
             Did we catch your attention? Do not hesitate and contact us
             right now! 
         </p>
+        {/* Zaujali jsme Vás? Neváhejte nás kontaktovat. */}
         </div>
         <div className='teamCon'>
             <div className='reh'>
