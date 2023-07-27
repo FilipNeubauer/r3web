@@ -8,7 +8,7 @@ import digital from "../images/digitalsolutions.png"
 import { Link, useNavigate } from 'react-router-dom';
 import miniLogo from "../images/WhiteR3.png"
 import Footer from '../components/Footer';
-import dig from "../images/digitalFrame.svg"
+import milkyway from "../images/milkyway.jpg"
 
 
 const MainPage = () => {
@@ -170,8 +170,10 @@ const MainPage = () => {
         <div className="overlay-Text">
           <h3>Digital Solutions Tailored for You!</h3>
         </div>
-        {/* <img src={dig} className="digital" alt="Digital Solutions for You" /> */}
       </div>
+
+      {/* <img src={milkyway} className="milkyway" alt="Digital Solutions for You" /> */}
+
     
 
         <button onClick={handleClick} className='startBtn'>
