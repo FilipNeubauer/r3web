@@ -10,8 +10,7 @@ import miniLogo from "../images/WhiteR3.png"
 import Footer from '../components/Footer';
 import milkyway from "../images/milkyway.jpg"
 
-
-const MainPage = () => {
+const MainPage = (language) => {
   // open or not
   const [open, setOpen] = useState(false)
 
@@ -167,11 +166,9 @@ const MainPage = () => {
 
       
         <div className="digital-container">
-        <div className="overlay-Text">
           <h3>Digital Solutions Tailored for You!</h3>
         </div>
-      </div>
-
+ 
       {/* <img src={milkyway} className="milkyway" alt="Digital Solutions for You" /> */}
 
     

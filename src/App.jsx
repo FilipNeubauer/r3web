@@ -7,10 +7,12 @@ import Configurator from './pages/Configurator';
 import Services from './pages/Services';
 import Pricing from './pages/Pricing';
 import Projects from './pages/Projects';
+import { TranslationProvider } from './components/TranslationContext';
 
 
 const App = () => {
     return (
+        <TranslationProvider>
         <Routes>
             <Route exact path="/" element={<MainPage/>}/>
             <Route path="/About" element={<About/>}/>
@@ -20,6 +22,7 @@ const App = () => {
             {/* <Route path="/Projects" element={<Projects/>}/> */}
             <Route path="/Services" element={<Services/>}/>
         </Routes>
+        </TranslationProvider>
 )
 }
 

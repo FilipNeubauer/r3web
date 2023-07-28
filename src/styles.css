@@ -21,6 +21,12 @@ h2 {
     font-size: 30px;
 }
 
+h3 {
+    font-family: 'nasalization';
+    font-size: 64px;
+    color: #09ABFD;
+  }
+
 p {
     font-family: nasalization;
     color: #ffffff;
@@ -634,6 +640,19 @@ li a:active {
     z-index: 0;
     border: 5px solid #09ABFD;
   }
+
+  .mask {
+    overflow: hidden;
+  }
+  /* .hide {
+    transform: translateY(-100%);
+    animation-name: slideDown;
+    animation-duration: 1.7s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
+  } */
+
+
   
   .overlay-Text {
     font-size: 50px;
