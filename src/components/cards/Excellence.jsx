@@ -1,13 +1,15 @@
 import React from 'react';
+import { useTranslationContext } from '../TranslationContext';
 
 const Excellence = (props) => {
+
+  const { h_excellence, excellence } = useTranslationContext();
+
   return (
-    <div className="sidecard">
-      <h2>Excellence</h2>
+    <div className="card">
+      <h2> {h_excellence} </h2>
       <p>
-      We aim for high-quality services, 
-      exceeding client expectations, 
-      and continuous improvement.
+        {excellence}
       </p>
       </div>
   );

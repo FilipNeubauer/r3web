@@ -11,27 +11,22 @@ import Excellence from '../components/cards/Excellence';
 import { useTranslationContext } from '../components/TranslationContext';
 
 const About = () => {
-  const { vision, whatwedo, translate, switchBool } = useTranslationContext();
+    const { vision, whatwedo, h_vision, h_whatwedo, values, team } = useTranslationContext();
 
-  const toggleLanguage = () => {
-    switchBool();
-    translate();
-  };
+    
     return (
         <>
         <Navbar current={"about"}/>
         <div className='contentAbout'>
         <div className='vision'>
-            <h2 className='h2about'>Our Vision</h2>
+            <h2 className='h2about'> {h_vision} </h2>
         <p> 
          {vision}
-        </p>
-        <button onClick={toggleLanguage}>Toggle LAng</button>
-        
+        </p>        
         </div>
         
         <div className='whatWeDo'>
-            <h2 className='h2about'>What We Do</h2>
+            <h2 className='h2about'> {h_whatwedo} </h2>
             <p> 
                 {whatwedo}
             </p>
@@ -40,12 +35,12 @@ const About = () => {
             <div className='coreValues'>
             <h2>
                 <img src={logo} className="h2Logo" alt="R3 technologies"></img>
-                   Values
+                   {values}
                 </h2>
                 </div>
                 <div className='cards'>
-                    <Creativity/>
                     <Innovation/>
+                    <Creativity/>
                     <Excellence/>
                 </div>
                 
@@ -54,7 +49,7 @@ const About = () => {
                 </div>
 
                 <div className='team'>
-                    <h2>Our Team</h2>
+                    <h2> {team} </h2>
                     <div className='imgTeam'>
                     <img src={reh} className='member'/>
                     <img src={neub} className='member'/>

@@ -1,13 +1,15 @@
 import React from 'react';
+import { useTranslationContext } from '../TranslationContext';
 
 const Innovation = (props) => {
+
+  const { h_innovation, innovation } = useTranslationContext();
+
   return (
     <div className="card">
-      <h2>Innovation</h2>
+      <h2> {h_innovation} </h2>
       <p>
-      We prioritize continuous learning, 
-      creative thinking, and cutting-edge 
-      technologies to deliver transformative solutions.
+        {innovation}
       </p>
       </div>
   );

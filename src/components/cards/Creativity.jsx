@@ -1,13 +1,14 @@
 import React from 'react';
+import { useTranslationContext } from '../TranslationContext';
 
 const Creativity = (props) => {
+  const { h_creativity, creativity } = useTranslationContext();
+
   return (
-    <div className="sidecard">
-      <h2>Creativity</h2>
+    <div className="card">
+      <h2> {h_creativity} </h2>
       <p>
-      We encourage out-of-the-box thinking, 
-      empowering our team to bring fresh ideas 
-      and imaginative approaches to solve challenges.
+        {creativity}
       </p>
       </div>
   );

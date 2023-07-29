@@ -3,10 +3,18 @@ import { Link } from 'react-router-dom';
 import "../styles.css"
 import miniLogo from "../images/WhiteR3.png"
 import { useState, useEffect } from 'react';
+import { useTranslationContext } from './TranslationContext';
 
 
 function Navbar(props) {
 
+  const { translate, switchBool } = useTranslationContext();
+
+
+  const toggleLanguage = () => {
+    switchBool();
+    translate();
+  };
 
   // open or not
   const [open, setOpen] = useState(false)
@@ -61,6 +69,9 @@ function Navbar(props) {
             <li className={props.current == "services" ? "current" : ""}>
               <Link to='/Services'>Services</Link>
             </li>
+
+        <button onClick={toggleLanguage}>Toggle LAng</button>
+
             
             {/* <li>
               <Link to='/Projects'>Projects</Link>
