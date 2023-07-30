@@ -8,11 +8,19 @@ import digital from "../images/digitalsolutions.png"
 import { Link, useNavigate } from 'react-router-dom';
 import miniLogo from "../images/WhiteR3.png"
 import Footer from '../components/Footer';
-import milkyway from "../images/milkyway.jpg"
+import { useTranslationContext } from '../components/TranslationContext';
 
-const MainPage = (language) => {
+const MainPage = () => {
   // open or not
   const [open, setOpen] = useState(false)
+
+
+  const { switchBool, translate, digital, journey, AboutUs_nav, Lang_nav, Services_nav, Pricing_nav, Contact_nav } = useTranslationContext();
+
+  const toggleLanguage = () => {
+    switchBool();
+    translate();
+  };
 
     const [shifted, setShifted] = useState(false);
     const targetElementRef = useRef(null);
@@ -96,14 +104,15 @@ const MainPage = (language) => {
       <div className='wholeBar'>
         <nav className='navBar'>
           <ul className='navList'>
+          <button className='togglelang' onClick={toggleLanguage}>{Lang_nav}</button>
             <li>
-              <Link to='/About'>About Us</Link>
+              <Link to='/About'>{AboutUs_nav}</Link>
             </li>
             {/* <li>
               <Link to='/Configurator'>Configurator</Link>
             </li> */}
             <li>
-              <Link to='/Contact'>Contact</Link>
+              <Link to='/Contact'>{Contact_nav}</Link>
             </li>
 
             <Link>
@@ -111,15 +120,13 @@ const MainPage = (language) => {
             </Link>
             
             <li>
-              <Link to='/Pricing'>Pricing</Link>
+              <Link to='/Pricing'>{Pricing_nav}</Link>
             </li>
             <li>
-              <Link to='/Services'>Services</Link>
+              <Link to='/Services'>{Services_nav}</Link>
             </li>
            
-            {/* <li>
-              <Link to='/Projects'>Projects</Link>
-            </li> */}
+            <button className='togglelang' onClick={toggleLanguage}>{Lang_nav}</button>
           </ul>
 
 
@@ -166,7 +173,7 @@ const MainPage = (language) => {
 
       
         <div className="digital-container">
-          <h3>Digital Solutions Tailored for You!</h3>
+          <h3>{digital}</h3>
         </div>
  
       {/* <img src={milkyway} className="milkyway" alt="Digital Solutions for You" /> */}
@@ -174,7 +181,7 @@ const MainPage = (language) => {
     
 
         <button onClick={handleClick} className='startBtn'>
-          Start Your Journey
+          {journey}
         </button>
 
       </div>

@@ -390,7 +390,19 @@ li a:active {
     }
 }
 
+.togglelang{
+    width: 50px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 50px;
+    color: #ffffff;
+    border: none;
+    font-family: nasalization;
+}
 
+.togglelang:hover{
+    color: #09ABFD;
+}
 
  .member1 {
     width: 300px;
@@ -619,6 +631,7 @@ li a:active {
     width: 400px;
     height: 400px;
     display: flex;
+    line-height: 80px;
     justify-content: center;
     align-items: center;
     text-align: center;

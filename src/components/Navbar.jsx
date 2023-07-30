@@ -8,7 +8,7 @@ import { useTranslationContext } from './TranslationContext';
 
 function Navbar(props) {
 
-  const { translate, switchBool } = useTranslationContext();
+  const { translate, switchBool, AboutUs_nav, Lang_nav, Services_nav, Pricing_nav, Contact_nav } = useTranslationContext();
 
 
   const toggleLanguage = () => {
@@ -48,14 +48,16 @@ function Navbar(props) {
       <nav className='navBar'>
           <ul className='navList'>
 
+          <button className='togglelang' onClick={toggleLanguage}>{Lang_nav}</button>
+
             <li className={props.current == "about" ? "current" : ""}>
-              <Link to='/About'>About Us</Link>      
+              <Link to='/About'>{AboutUs_nav}</Link>      
             </li>
             {/* <li>
               <Link to='/Configurator'>Configurator</Link>
             </li> */}
             <li className={props.current == "contact" ? "current" : ""}>
-              <Link to='/Contact'>Contact</Link>
+              <Link to='/Contact'>{Contact_nav}</Link>
             </li>
 
             <Link to='/'>
@@ -63,14 +65,14 @@ function Navbar(props) {
             </Link>
 
             <li className={props.current == "pricing" ? "current" : ""}>
-              <Link to='/Pricing'>Pricing</Link>
+              <Link to='/Pricing'>{Pricing_nav}</Link>
             </li>
 
             <li className={props.current == "services" ? "current" : ""}>
-              <Link to='/Services'>Services</Link>
+              <Link to='/Services'>{Services_nav}</Link>
             </li>
 
-        <button onClick={toggleLanguage}>Toggle LAng</button>
+        <button className='togglelang' onClick={toggleLanguage}>{Lang_nav}</button>
 
             
             {/* <li>
@@ -87,20 +89,21 @@ function Navbar(props) {
           {/* hamburger navbar */}
           <ul className={`hamburgerNavList ${open ? "open" : ""}`}>
             <li>
-                <Link to='/About'>About Us</Link>      
+                <Link to='/About'>{AboutUs_nav}</Link>      
               </li>
 
               <li>
-                <Link to='/Contact'>Contact</Link>
+                <Link to='/Contact'>{Contact_nav}</Link>
               </li>
 
               <li>
-                <Link to='/Pricing'>Pricing</Link>
+                <Link to='/Pricing'>{Pricing_nav}</Link>
               </li>
 
               <li>
-                <Link to='/Services'>Services</Link>
+                <Link to='/Services'>{Services_nav}</Link>
               </li>
+          <button className='togglelang' onClick={toggleLanguage}>{Lang_nav}</button>
           </ul>
  
             <div className={`hamburgerContainer ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>

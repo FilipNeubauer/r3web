@@ -4,10 +4,12 @@ import Navbar from '../components/Navbar';
 import neub from "../images/neubContact.png"
 import reh from "../images/rehakContact.png"
 import Footer from '../components/Footer';
+import { useTranslationContext } from '../components/TranslationContext';
 
 const Contact = () => {
 
 
+  const { ContactUs, p_contact } = useTranslationContext();
       
     
     return (
@@ -15,11 +17,10 @@ const Contact = () => {
         <Navbar current={"contact"}/>
         <div className='contentContact' style={{"margin-bottom":"30px"}}>
         <div className='cont'>
-            <h2 className='hCon'>Contact Us</h2>
+            <h2 className='hCon'>{ContactUs}</h2>
         
         <p className='pCon'> 
-            Did we catch your attention? Do not hesitate and contact us
-            right now! 
+            {p_contact}
         </p>
         {/* Zaujali jsme Vás? Neváhejte nás kontaktovat. */}
         </div>
