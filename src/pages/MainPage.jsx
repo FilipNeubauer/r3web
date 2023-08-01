@@ -153,6 +153,8 @@ const MainPage = () => {
               <li>
                 <Link to='/Services'>Services</Link>
               </li>
+            <button className='togglelang' onClick={toggleLanguage}>{Lang_nav}</button>
+
           </ul>
  
 {shifted&& <div className={`hamburgerContainer ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>

@@ -380,15 +380,15 @@ li a:active {
  }
 
  .member {
-    width: 40%;
+    width: 355px;
     padding: 20px;
  }
 
- @media (min-width: 890px) {
+ /* @media (min-width: 890px) {
     .member {
         width: 355px;
     }
-}
+} */
 
 .togglelang{
     width: 50px;

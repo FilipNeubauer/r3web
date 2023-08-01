@@ -15,7 +15,7 @@ const Services = () => {
         <div className='contentServices'>
             {/* <img  src={servimg} className='servicesimg' alt='Services'/> */}
 
-        <div className="services-layer">
+        {/* <div className="services-layer"> */}
             <h1 className='h1services'>{h_services}</h1>
             <div className="software-dvelopment">
             <h2>{h_software}</h2>
@@ -32,7 +32,7 @@ const Services = () => {
             </p>
 
             </div>
-        </div>
+        {/* </div> */}
 
         </div>
         <Footer />
