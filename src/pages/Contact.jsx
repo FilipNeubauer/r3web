@@ -7,11 +7,9 @@ import Footer from '../components/Footer';
 import { useTranslationContext } from '../components/TranslationContext';
 
 const Contact = () => {
-
-
-  const { ContactUs, p_contact } = useTranslationContext();
-      
     
+  const { ContactUs, p_contact } = useTranslationContext();
+
     return (
         <>
         <Navbar current={"contact"}/>
@@ -27,13 +25,13 @@ const Contact = () => {
         <div className='teamCon'>
             <div className='reh'>
             <img src={reh} className='member1'/>
-            <a href="mailto:rehakj03@seznam.cz" className='cntct'>rehakj03@seznam.cz</a>
+            <a href="mailto:r3rehak@gmail.com" className='cntct'>r3rehak@gmail.com</a>
             <a href="tel:+420777066841" className='cntct'>+420 777 066 841</a>
             </div>
 
             <div className='neub'>
             <img src={neub} className='member1'/>
-            <a href="mailto:filipneub@seznam.cz" className='cntct'>filipneub@seznam.cz</a>
+            <a href="mailto:r3neubauer@gmail.com" className='cntct'>r3neubauer@gmail.com</a>
             <a href="tel:+420720206668" className='cntct'>+420 720 206 668</a>
 
             </div>

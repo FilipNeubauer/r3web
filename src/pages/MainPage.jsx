@@ -139,19 +139,19 @@ const MainPage = () => {
           {/* hamburger navbar */}
           <ul className={`hamburgerNavList ${open ? "open" : ""}`}>
             <li>
-                <Link to='/About'>About Us</Link>      
+                <Link to='/About'>{AboutUs_nav}</Link>      
               </li>
 
               <li>
-                <Link to='/Contact'>Contact</Link>
+                <Link to='/Contact'>{Contact_nav}</Link>
               </li>
 
               <li>
-                <Link to='/Pricing'>Pricing</Link>
+                <Link to='/Pricing'>{Pricing_nav}</Link>
               </li>
 
               <li>
-                <Link to='/Services'>Services</Link>
+                <Link to='/Services'>{Services_nav}</Link>
               </li>
             <button className='togglelang' onClick={toggleLanguage}>{Lang_nav}</button>
 
