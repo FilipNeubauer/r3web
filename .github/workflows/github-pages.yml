@@ -1,25 +1,29 @@
----
-name: Build and Deploy React App to GitHub Pages
+name: Deploy to GitHub Pages
+
 on:
   push:
-    branches: [master]
+    branches:
+      - master
+
 jobs:
-  build-and-deploy:
-    name: Build and Deploy
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Build
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
         run: npm install
 
-      - name: Deploy
+      - name: Build and deploy
         run: |
-          git config --global user.name 'Jakub Rehak'
-          git config --global user.email 'rehakj03@seznam.cz'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}    
-          npm run deploy:ci
+          npm run build
+          npx gh-pages -d build
         env:
-          CI: ""
+          CI: true
