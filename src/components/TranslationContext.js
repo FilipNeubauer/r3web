@@ -74,7 +74,7 @@ export const TranslationProvider = ({ children }) => {
     "Contact Us"
   );
   const [p_contact, setP_contact] = useState(
-    "Did we catch your attention? Do not hesitate and contact usright now!"
+    "Did we catch your attention? Do not hesitate and contact us right now!"
   );
 
 

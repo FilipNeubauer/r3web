@@ -2,8 +2,10 @@ import React from 'react';
 import "../styles.css";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import neub from "../images/neubauerf.png";
-import reh from "../images/rehakj.png";
+import neub from "../images/Neubauer.png";
+import reh from "../images/Rehak.png";
+import kope from "../images/Kopecky.png";
+import bui from "../images/Bui.png";
 import logo from "../images/WhiteR3.png";
 import Innovation from '../components/cards/Innovation';
 import Creativity from '../components/cards/Creativity';
@@ -51,8 +53,10 @@ const About = () => {
                 <div className='team'>
                     <h2> {team} </h2>
                     <div className='imgTeam'>
-                    <img src={reh} className='member'/>
-                    <img src={neub} className='member'/>
+                        <img src={reh} className='member'/>
+                        <img src={neub} className='member'/>
+                        <img src={kope} className='member'/>
+                        {/* <img src={bui} className='member'/> */}
                     </div>
                 </div>
             </div>
