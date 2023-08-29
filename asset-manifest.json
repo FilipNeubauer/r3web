@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.205fc411.css",
-    "main.js": "/static/js/main.33ddd7bb.js",
+    "main.js": "/static/js/main.9ce446da.js",
+    "static/media/rehakContact.png": "/static/media/rehakContact.c70b42472d096cf225cf.png",
+    "static/media/Rehak.png": "/static/media/Rehak.2de8db7a59f642f2e195.png",
+    "static/media/neubContact.png": "/static/media/neubContact.bfefda4efb29a7a4fcf5.png",
+    "static/media/Neubauer.png": "/static/media/Neubauer.b297af3e906c10138ded.png",
+    "static/media/Kopecky.png": "/static/media/Kopecky.5cbbad66a508c7015d5c.png",
     "static/media/digitalsolutions.png": "/static/media/digitalsolutions.26633f2d9e92217c72c7.png",
-    "static/media/neubauerf.png": "/static/media/neubauerf.706534cef00438545b52.png",
-    "static/media/rehakj.png": "/static/media/rehakj.6c7afe4fe08d5aecb7e8.png",
-    "static/media/rehakContact.png": "/static/media/rehakContact.c5af4af35ae4ae1d80e1.png",
-    "static/media/neubContact.png": "/static/media/neubContact.61fb8c37678bc3d9f883.png",
     "static/media/services.png": "/static/media/services.184a176c1338dca29891.png",
     "static/media/nasalization-rg.otf": "/static/media/nasalization-rg.4cbf2019f1f7337b2594.otf",
     "static/media/WhiteR3.png": "/static/media/WhiteR3.1a559a8f2dfaf16ec79d.png",
@@ -16,10 +17,10 @@
     "static/media/WhiteR3.svg": "/static/media/WhiteR3.5e9164f3bca8d4024a52f863f7f8fdac.svg",
     "index.html": "/index.html",
     "main.205fc411.css.map": "/static/css/main.205fc411.css.map",
-    "main.33ddd7bb.js.map": "/static/js/main.33ddd7bb.js.map"
+    "main.9ce446da.js.map": "/static/js/main.9ce446da.js.map"
   },
   "entrypoints": [
     "static/css/main.205fc411.css",
-    "static/js/main.33ddd7bb.js"
+    "static/js/main.9ce446da.js"
   ]
 }
