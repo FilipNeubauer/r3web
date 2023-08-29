@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import neub from "../images/Neubauer.png";
 import reh from "../images/Rehak.png";
 import kope from "../images/Kopecky.png";
-import bui from "../images/Bui.png";
+// import bui from "../images/Bui.png";
 import logo from "../images/WhiteR3.png";
 import Innovation from '../components/cards/Innovation';
 import Creativity from '../components/cards/Creativity';
